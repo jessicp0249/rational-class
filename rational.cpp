@@ -1,3 +1,5 @@
+#include<iostream>
+#include<string>
 #include"rational.h"
 
 using namespace std;
