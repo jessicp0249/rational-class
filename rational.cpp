@@ -45,6 +45,30 @@ Rational Rational::plus(Rational r)
     return (sum);
 }
 
+Rational Rational::mult_by(Rational r)
+{
+    int new_top = get_top() * r.get_top();
+    int new_bottom = get_bottom() * r.get_bottom();
+    Rational product(new_top, new_bottom);
+    return (product);
+}
+
+Rational Rational::div_by(Rational r)
+{
+    int new_top = get_top() * r.get_bottom();
+    int new_bottom = get_bottom() * r.get_top();
+    Rational quotient(new_top, new_bottom);
+    return (quotient);
+}
+/*
+Rational minus(Rational r)
+{
+    Rational inverse(-1, 1);
+    Rational first_ratio(m_top, m_bottom);
+    Rational difference = first_ratio.plus(r.mult_by(inverse));
+    return (difference);
+}
+*/
 string Rational::print()
 {
     string output = to_string(get_top()) +  "/" + to_string(get_bottom());
