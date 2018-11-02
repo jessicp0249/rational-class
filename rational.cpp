@@ -71,12 +71,17 @@ Rational minus(Rational r)
     return (difference);
 }
 */
-void Rational::read()
+Ratioinal Rational::read()
 {
+    int top;
+    int bottom;
+
     cout << "enter the numerator: ";
     cin >> top;
     cout << "enter the denominator: ";
     cin >> bottom;
+
+    return Rational(top, bottom);
 }
 
 string Rational::print()
