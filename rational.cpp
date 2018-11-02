@@ -62,15 +62,16 @@ Rational Rational::div_by(Rational r)
     Rational quotient(new_top, new_bottom);
     return (quotient);
 }
-/*
-Rational minus(Rational r)
+
+Rational Rational:: minus(Rational r)
 {
     Rational inverse(-1, 1);
-    Rational first_ratio(m_top, m_bottom);
-    Rational difference = first_ratio.plus(r.mult_by(inverse));
+    Rational additive_inverse = r.mult_by(inverse);
+    Rational difference = plus(additive_inverse);
+    
     return (difference);
 }
-*/
+
 Rational Rational::read()
 {
     int top;
