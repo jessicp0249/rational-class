@@ -1,3 +1,5 @@
+#include<iostream>
+#include<string>
 #include"rational.h"
 
 using namespace std;
@@ -69,6 +71,14 @@ Rational minus(Rational r)
     return (difference);
 }
 */
+void Rational::read()
+{
+    cout << "enter the numerator: ";
+    cin >> top;
+    cout << "enter the denominator: ";
+    cin >> bottom;
+}
+
 string Rational::print()
 {
     string output = to_string(get_top()) +  "/" + to_string(get_bottom());
