@@ -10,8 +10,8 @@ class Rational
         Rational();     // Default constructor
         Rational(int top, int bottom);   // Constructor with parameters
 
-        Rational get_top();     // Get the numerator
-        Rational get_bottom();      // Get the denominator
+        int get_top();     // Get the numerator
+        int get_bottom();      // Get the denominator
 
         void set_top(int top);     // Set the numerator
         void set_bottom(int bottom);      //Set the denominator
