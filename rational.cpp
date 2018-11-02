@@ -47,6 +47,14 @@ Rational Rational::plus(Rational r)
     return (sum);
 }
 
+void Rational::read()
+{
+    cout << "enter the numerator: ";
+    cin >> top;
+    cout << "enter the denominator: ";
+    cin >> bottom;
+}
+
 string Rational::print()
 {
     string output = to_string(get_top()) +  "/" + to_string(get_bottom());
