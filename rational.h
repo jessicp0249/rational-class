@@ -24,5 +24,5 @@ class Rational
         string print();     // Print Rational
 
     private:
-        int top, bottom;    // Numerator and denominator
+        int m_top, m_bottom;    // Numerator and denominator
 };
