@@ -20,7 +20,7 @@ class Rational
         Rational mult_by(Rational r);   // Multiply two rationals
         Rational div_by(Rational r);    // Divide one rational by another
         
-        void read();     // Read a Rational in from User input
+        Rational read();     // Read a Rational in from User input
         string print();     // Print Rational
 
     private:

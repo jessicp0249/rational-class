@@ -71,7 +71,7 @@ Rational minus(Rational r)
     return (difference);
 }
 */
-Ratioinal Rational::read()
+Rational Rational::read()
 {
     int top;
     int bottom;
