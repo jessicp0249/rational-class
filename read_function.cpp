@@ -17,9 +17,22 @@ string Rational::read()
     {
         if(input.at(i) = [0-9])
         {
-            
+            top = top * 10 + static_cast<int>(input.at(i));
+            i++;
         }
-
+        else if(input.at(i) = " ")  i++;
     }
+
+    while(i < input.length())
+    {
+        if(input.at(i) = [0-9])
+        {
+            bottom = bottom * 10 + static_cast<int>(input.at(i));
+            i++;
+        }
+        else if(input.at(i) = " ")  i++;
+    }
+    
+    return Rational(top, bottom);
 
 }
