@@ -13,8 +13,8 @@ class Rational
         Rational get_top();     // Get the numerator
         Rational get_bottom();      // Get the denominator
 
-        void set_top();     // Set the numerator
-        void set_bottom();      //Set the denominator
+        void set_top(int top);     // Set the numerator
+        void set_bottom(int bottom);      //Set the denominator
         Rational plus(Rational r);      // Add two rationals
         Rational minus(Rational r);     // Subtract one rational from another
         Rational mult_by(Rational r);   // Multiply two rationals
